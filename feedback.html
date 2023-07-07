@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users Feedback</title>
+    <link rel="stylesheet" href="css/feedback.css">
 </head>
 <body>
-    
+    <form action="#">
+        <h1>User's Feedback</h1>
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <label for="little-good">
+        <input type="radio" name="quality-feedback" id="little-good">
+        Little Good
+        </label>
+        <label for="good">
+        <input type="radio" name="quality-feedback" id="good">
+        Good
+        </label>
+        <label for="excellent">
+        <input type="radio" name="quality-feedback" id="excellent">
+        Excellent
+        </label>
+        <label for="selector" class="selector-label">Choose One selector
+        <select id="selector">
+            
+            <option>Select one</option>
+            <option>Bad</option>
+            <option>Little Good</option>
+            <option>Good</option>
+            <option>Excellent</option>
+        </select>
+        </label>
+        <label for="feedback-input">
+            Enter You Comment:
+        
+        <textarea name="feedback" id="feedback-input" cols="40" rows="5" placeholder="Here input you comment"></textarea>
+        </label>
+        <input type="submit" value="Submit">
+       
+    </form>
 </body>
 </html>
